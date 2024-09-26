@@ -3,48 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Object Oriented Programming</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Sample</title>
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
+        .charts-container{
+            margin-top: 2rem;
+            display:flex;
+            justify-content: center;
+            flex-direction: wrap;
         }
+        .charts-container > div{
+            width:30.33 rem;
+            height:33.33 rem;
+            margin: 10px;
+            line-height: 75px;
+            font-size: 30px;
+        }
+       
     </style>
 </head>
 <body>
-    <h1>Object Oriented Programming Topics</h1>
-    <h3><a href="topic-1.html">Topic 1 - Objects and Classes</a></h3>
-    <h3><a href="topic-2.html">Topic 2 - Methods</a></h3>
-    <h3><a href="topic-3.html">Topic 3 - Access Modifiers and Encapsulation</a></h3>
-    <h3><a href="topic-4.html">Topic 4 - Inheritance</a></h3>
-    <h1>Hello World of OOP hehe</h1>
-    <h1 id="person1-name"></h1>
-    <h1 id="person1-age"></h1>
-    <h1 id="person1-occupation"></h1>
 
-
-    <script>
-       //Input
-        const person1 ={
-            name:"CHRISTIAN CHOLO LLENAS",
-            age:21,
-            occupation:"hqr"
-        }
-
-        //Process and Output
-
-        //Solution 1: Display via console.log
-        console.log("Name: " + person1.name);
-        console.log("Age: "  +person1.age);
-        console.log("Occupation: " + person1.occupation);
-
-        //Solution 2: Display via HTML
-        document.getElementById("person1-name").innerHTML = "Name: " + person1.name;
-        document.getElementById("person1-age").innerHTML = "Age: " + person1.age;
-        document.getElementById("person1-occupation").innerHTML = "Occupation: " + person1.occupation;
-
-
-    </script>
-<a href="topic-1.html">Topic 1 - Objects and Classes</a>
+    <div class="charts-container"></div>
+        <div class="card charts-card">
+            <div class="card-body">
+              <h5 class="card-title">Area</h5>
+              <canvas id="areaChart"></canvas>
+            </div>
+        </div>  
+    
+        <div class="card">
+            <div class="card-body charts-card">
+              <h5 class="card-title">Bar</h5>
+              <canvas id="barChart"></canvas>
+            </div>
+        </div>  
+    </div>
+   
+<script src="chart.js"></script>  
 </body>
 </html>
