@@ -44,7 +44,7 @@ class Person{
 
 
 // Creating an object (instance) of the Person class
-const personOne = new Person('Cliff', 23, 'Instructor');
+const personOne = new Person('Cholo', 21, 'Student');
 
 // Calling methods
 personOne.displayInfo();  

@@ -63,7 +63,7 @@ class Student extends Person {
 }
 
 // Creating an instance of the Student class
-const studentOne = new Student('Cliff', 23, 'Instructor', 'Computer Science');
+const studentOne = new Student('Cholo', 21, 'Student', 'BSIT');
 
 // Calling methods
 studentOne.displayInfo();
